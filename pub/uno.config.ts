@@ -26,6 +26,13 @@ export default defineConfig({
         *, ::before, ::after {
           box-sizing: border-box;
         }
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
         .brush-edge-top { position: relative; }
         .brush-edge-top::before {
           content: ''; position: absolute; top: -19px; left: 50%; transform: translateX(-50%); width: 100vw; height: 20px;

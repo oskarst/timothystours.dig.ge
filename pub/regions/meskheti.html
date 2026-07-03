@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meskheti | Timothy's Tours</title>
+    <meta name="description" content="Explore Meskheti, a beautiful region in Georgia.">
+    <link rel="stylesheet" href="../uno.css?v=2">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Meskheti",
+    "description": "Meskheti is a labyrinth of steep pine-clad mountains, deep river canyons, and ancient terraced valleys. Straddling the Turkish border, it's a frontier land that feels heavily fortified and historically complex. The air is dry and smells of resin and dust. The terrain is unforgiving, but it hides architectural marvels carved directly into the bedrock.",
+    "url": "https://timothystours.dig.ge/regions/meskheti.html"
+}
+    </script>
+</head>
+<body class="bg-bgPrimary text-textLight font-sans m-0 p-0 leading-relaxed pt-16 flex flex-col min-h-screen overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-bgPrimary border-b-2 border-primary fixed w-full top-0 z-50 shadow-md">
+        <div class="text-xl font-serif text-accent uppercase tracking-widest font-bold z-50">
+            <a href="../index.html" class="no-underline text-accent hover:text-yellow-500">Timothy's Tours</a>
+        </div>
+        
+        <!-- Pancake Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-accent focus:outline-none z-50">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Nav Links -->
+        <ul id="nav-links" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-bgPrimary md:bg-transparent border-b-2 md:border-none border-primary gap-8 list-none m-0 p-6 md:p-0 items-center z-40 transition-all duration-300">
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../index.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Home</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../about.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">About Me</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../trip-planning.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Trip Planning</a></li>
+            <li class="relative group w-full md:w-auto text-center md:text-left">
+                <a href="index.html" id="mobile-regions-btn" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300 md:py-2">Regions &#9662;</a>
+                <ul id="mobile-regions-dropdown" class="hidden md:group-hover:block relative md:absolute left-0 mt-2 bg-bgPrimary md:border-2 md:border-primary w-full md:w-48 shadow-none md:shadow-lg list-none p-0 m-0 z-50">
+                    <li><a href="samegrelo.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">samegrelo</a></li>
+                    <li><a href="guria.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">guria</a></li>
+                    <li><a href="adjara.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">adjara</a></li>
+                    <li><a href="lechkhumi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">lechkhumi</a></li>
+                    <li><a href="racha.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">racha</a></li>
+                    <li><a href="imereti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">imereti</a></li>
+                    <li><a href="meskheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">meskheti</a></li>
+                    <li><a href="javakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">javakheti</a></li>
+                    <li><a href="kartli.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kartli</a></li>
+                    <li><a href="svaneti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">svaneti</a></li>
+                    <li><a href="mtianeti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">mtianeti</a></li>
+                    <li><a href="kakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kakheti</a></li>
+                    <li><a href="tbilisi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">tbilisi</a></li>
+                </ul>
+            </li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../contact.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <header class="relative flex flex-col justify-center items-center text-center p-8 " style="height: 60vh; width: 100%;">
+            <div class="absolute top-0 left-0 w-full h-full z-0">
+                <img src="../img/regions/meskheti-meskheti-zemo-tmogvi-1024x768.webp" alt="Meskheti Landscape" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gray-900 opacity-40"></div>
+            
+            <div class="relative z-20 w-full max-w-4xl mx-auto">
+                <h1 class="font-serif text-4xl md:text-5xl text-accent uppercase tracking-widest mb-6">Meskheti</h1>
+            </div>
+        
+        </header>
+
+        <!-- Content Section -->
+        
+        
+
+        
+        
+
+        <section class="pt-20 px-8 max-w-4xl mx-auto bg-bgPrimary brush-edge-top relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Desolate Mtkvari Gorges</h2>
+            <p class="mb-6">Meskheti is a stark, dramatic region defined by the mighty Mtkvari canyon and the heavy, lingering presence of the Middle Ages. Most tourists hurry out and back on sterile day trips just to snap a photo of the Vardzia cave town before rushing back to the city. We bypass that artificial rush, leaving the crowds behind to explore the massive, forgotten fortresses and ancient tunnels scattered across the desolate plateaus.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Tmogvi Castle Grapevines</h2>
+            <p class="mb-6">This is a place where the history is as rugged as the terrain itself. Hiking up to the ruins of Tmogvi Castle reveals the tangled roots of a 400-year-old grapevine hidden deep in the valley below. There are no velvet ropes here; visitors experience the visceral reality of medieval architecture slowly being reclaimed by the untamed environment.</p>
+        </section>
+
+        <!-- Carousel Section -->
+        <div class="w-full bg-bgPrimary py-8 border-b-2 border-gray-800 relative z-20">
+            <div class="max-w-6xl mx-auto px-4 relative group">
+                <button class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10094;</button>
+                
+                <div class="carousel-container flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-4 px-2">
+                <img src="../img/regions/meskheti-gallery-meskheti-views-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-tori-mountains-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-tmogvi-castle-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-oqros-tsikhe-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-okros-tsikhe-side-view-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-mtkvari-village-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-horses-mountain-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-highland-summer-village-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-enteli-ruins-scaled.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-borjomi-panorama-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/meskheti-gallery-meskheti-borjomi-hiking-trail-1024x768.webp" alt="Meskheti Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+
+                </div>
+                
+                <button class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10095;</button>
+            </div>
+        </div>
+
+        <section class="pb-20 pt-8 px-8 max-w-4xl mx-auto bg-bgPrimary relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Tori Peaks & Pagan Idols</h2>
+            <p class="mb-6">Beyond the canyon, the misty ridges of the Tori mountains offer an intense, isolated hiking experience free from other travelers. The route tracks through forgotten forests to find unmarked hot springs and the alien-like Stone Man of Uraveli, one of the last surviving pagan idols in the country. This is real exploration, where every discovery feels earned by the sweat on your brow.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Open Steppes & Local Noodles</h2>
+            <p class="mb-6">I have driven these open steppes and walked these rocky paths to uncover the true character of Meskheti. Traveling with me means eating unique local noodles in authentic village guesthouses and sleeping under the vast, open sky. Grab your boots, and we will head out to find the ancient mysteries that this area holds.</p>
+        </section>
+        
+        <!-- CTA -->
+        <div class="text-center pb-20">
+             <a href="../contact.html" class="inline-block bg-primary text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-primary hover:bg-transparent hover:text-accent transition-all duration-300">Explore Meskheti With Me</a>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-900 py-12 border-t-4 border-primary mt-auto z-20 relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Brand -->
+            <div>
+                <h3 class="font-serif text-2xl text-accent uppercase tracking-widest mb-4">Timothy's Tours</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">Expert guidance through the rivers, dirt roads, and unpolished beauty of Georgia. No tourist traps, just the real deal.</p>
+                <p class="text-gray-500 text-sm">&copy; 2026 Timothy's Tours. All rights reserved.</p>
+            </div>
+            
+            <!-- Links -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="list-none p-0 flex flex-col gap-3">
+                    <li><a href="../index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="../about.html" class="no-underline text-gray-400 hover:text-accent transition-colors">About Me</a></li>
+                    <li><a href="../trip-planning.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Trip Planning</a></li>
+                    <li><a href="index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Regions</a></li>
+                    <li><a href="../contact.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Contact</h4>
+                <ul class="list-none p-0 flex flex-col gap-3 mb-8">
+                    <li><a href="mailto:timothy@timothystours.ge" class="no-underline text-gray-400 hover:text-accent transition-colors">timothy@timothystours.ge</a></li>
+                    <li><a href="tel:+995598411778" class="no-underline text-gray-400 hover:text-accent transition-colors">+995 598 411 778</a></li>
+                </ul>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/timothys.tours.georgia/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/tiresias.monk/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Instagram</a>
+                </div>
+                <p class="mt-8 text-xs text-left md:text-right">Built by <a href="https://dig.ge" class="no-underline text-gray-500 hover:text-accent transition-colors">DIG</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/carousel.js?v=1"></script>
+    <script src="../js/nav.js?v=1"></script>
+</body>
+</html>

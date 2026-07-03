@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartli | Timothy's Tours</title>
+    <meta name="description" content="Explore Kartli, a beautiful region in Georgia.">
+    <link rel="stylesheet" href="../uno.css?v=2">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Kartli",
+    "description": "Kartli is the backbone of Georgia. It's a central artery of sun-scorched plains, strategic river valleys, and wind-blasted ridges. This is where empires clashed, and the landscape is littered with the scars to prove it\u2014ruined citadels, ancient cave cities, and battle-hardened monasteries. It's not a place for leisurely strolls; it's a place for reckoning with history in the raw elements.",
+    "url": "https://timothystours.dig.ge/regions/kartli.html"
+}
+    </script>
+</head>
+<body class="bg-bgPrimary text-textLight font-sans m-0 p-0 leading-relaxed pt-16 flex flex-col min-h-screen overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-bgPrimary border-b-2 border-primary fixed w-full top-0 z-50 shadow-md">
+        <div class="text-xl font-serif text-accent uppercase tracking-widest font-bold z-50">
+            <a href="../index.html" class="no-underline text-accent hover:text-yellow-500">Timothy's Tours</a>
+        </div>
+        
+        <!-- Pancake Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-accent focus:outline-none z-50">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Nav Links -->
+        <ul id="nav-links" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-bgPrimary md:bg-transparent border-b-2 md:border-none border-primary gap-8 list-none m-0 p-6 md:p-0 items-center z-40 transition-all duration-300">
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../index.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Home</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../about.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">About Me</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../trip-planning.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Trip Planning</a></li>
+            <li class="relative group w-full md:w-auto text-center md:text-left">
+                <a href="index.html" id="mobile-regions-btn" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300 md:py-2">Regions &#9662;</a>
+                <ul id="mobile-regions-dropdown" class="hidden md:group-hover:block relative md:absolute left-0 mt-2 bg-bgPrimary md:border-2 md:border-primary w-full md:w-48 shadow-none md:shadow-lg list-none p-0 m-0 z-50">
+                    <li><a href="samegrelo.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">samegrelo</a></li>
+                    <li><a href="guria.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">guria</a></li>
+                    <li><a href="adjara.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">adjara</a></li>
+                    <li><a href="lechkhumi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">lechkhumi</a></li>
+                    <li><a href="racha.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">racha</a></li>
+                    <li><a href="imereti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">imereti</a></li>
+                    <li><a href="meskheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">meskheti</a></li>
+                    <li><a href="javakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">javakheti</a></li>
+                    <li><a href="kartli.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kartli</a></li>
+                    <li><a href="svaneti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">svaneti</a></li>
+                    <li><a href="mtianeti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">mtianeti</a></li>
+                    <li><a href="kakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kakheti</a></li>
+                    <li><a href="tbilisi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">tbilisi</a></li>
+                </ul>
+            </li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../contact.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <header class="relative flex flex-col justify-center items-center text-center p-8 " style="height: 60vh; width: 100%;">
+            <div class="absolute top-0 left-0 w-full h-full z-0">
+                <img src="../img/trip_planning/svaneti-alpine-trek-1024x768.webp" alt="Kartli Landscape" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gray-900 opacity-40"></div>
+            
+            <div class="relative z-20 w-full max-w-4xl mx-auto">
+                <h1 class="font-serif text-4xl md:text-5xl text-accent uppercase tracking-widest mb-6">Kartli</h1>
+            </div>
+        
+        </header>
+
+        <!-- Content Section -->
+        
+        
+
+        <section class="pt-20 px-8 max-w-4xl mx-auto bg-bgPrimary brush-edge-top relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Trialeti Range Thickets</h2>
+            <p class="mb-6">Kartli is the historical heartland of Georgia, heavily bypassed by tourists who only stop for a quick museum tour before fleeing to the next generic landmark. Avoiding that superficial trap opens up the most diverse, historically dense area in the country. We explore the vast labyrinth of the Trialeti Range, uncovering forgotten villages and ancient monuments hidden deep in the forests.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Samshvilde Ruins</h2>
+            <p class="mb-6">The southern marchlands are a raw patchwork of cultures displaying the ruined glory of the Georgian Golden Age. The trails lead to the massive archaeological site of Samshvilde, a city inhabited for six thousand years, before tracking through dense overgrowth to find abandoned Armenian monasteries. This is a place where history is not cordoned off behind glass; it is weathered, overgrown, and waiting to be found.</p>
+        </section>
+
+        <!-- Carousel Section -->
+        <div class="w-full bg-bgPrimary py-8 border-b-2 border-gray-800 relative z-20">
+            <div class="max-w-6xl mx-auto px-4 relative group">
+                <button class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10094;</button>
+                
+                <div class="carousel-container flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-4 px-2">
+                <img src="../img/regions/kartli-gallery-kartli-saorbisi-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-samtsevrisi-fortress-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-samshvilde-cathedral-768x1024.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-samshvilde-canyon-scaled.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-mountains-ksilisi-sheep-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-kldekari-view-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-kldekari-road-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-karta-mountain-summer-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-ikvi-frescoes-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-gudarekhi-carving-768x1024.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-grakali-rock-formations-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-ertatsminda-cathedral-768x1024.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-drisi-fortress-scaled.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-birtvisi-canyons-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-ateni-valley-scaled.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-algeti-village-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-algeti-kldekari-campsite-sunset-scaled.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-jimny-kartli-danakhvisi-view-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-img_6624-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-skhvilo-fortress-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-tejisi-megaliths-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-tsedisi-ruins-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-upper-ateni-mountains-scaled.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-upper-tedzami-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/kartli-gallery-kartli-khorakert-1024x768.webp" alt="Kartli Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+
+                </div>
+                
+                <button class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10095;</button>
+            </div>
+        </div>
+
+        <section class="pb-20 pt-8 px-8 max-w-4xl mx-auto bg-bgPrimary relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Tsalka Standing Stones</h2>
+            <p class="mb-6">On the quiet Tsalka plateau, visitors walk among prehistoric standing stones and the remnants of megalithic fortresses. For a true physical adventure, the steep ridges of the Algeti and Tedzami valleys push past old bandit fortresses and peculiarly decorated ancient chapels. The terrain here is fiercely beautiful, demanding muddy boots in exchange for the best panoramic views.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Ateni Cliff Settlements</h2>
+            <p class="mb-6">I have driven the off-road trails and hiked the steep canyons of Kartli to map out its most authentic experiences. Whether scaling the dramatic cliffs of the Ateni valley or sitting down with locals in a remote agricultural village, this is a Georgia most people never see. Leave the paved routes behind, and let us uncover the true character of the heartland.</p>
+        </section>
+        
+        <!-- CTA -->
+        <div class="text-center pb-20">
+             <a href="../contact.html" class="inline-block bg-primary text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-primary hover:bg-transparent hover:text-accent transition-all duration-300">Explore Kartli With Me</a>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-900 py-12 border-t-4 border-primary mt-auto z-20 relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Brand -->
+            <div>
+                <h3 class="font-serif text-2xl text-accent uppercase tracking-widest mb-4">Timothy's Tours</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">Expert guidance through the rivers, dirt roads, and unpolished beauty of Georgia. No tourist traps, just the real deal.</p>
+                <p class="text-gray-500 text-sm">&copy; 2026 Timothy's Tours. All rights reserved.</p>
+            </div>
+            
+            <!-- Links -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="list-none p-0 flex flex-col gap-3">
+                    <li><a href="../index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="../about.html" class="no-underline text-gray-400 hover:text-accent transition-colors">About Me</a></li>
+                    <li><a href="../trip-planning.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Trip Planning</a></li>
+                    <li><a href="index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Regions</a></li>
+                    <li><a href="../contact.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Contact</h4>
+                <ul class="list-none p-0 flex flex-col gap-3 mb-8">
+                    <li><a href="mailto:timothy@timothystours.ge" class="no-underline text-gray-400 hover:text-accent transition-colors">timothy@timothystours.ge</a></li>
+                    <li><a href="tel:+995598411778" class="no-underline text-gray-400 hover:text-accent transition-colors">+995 598 411 778</a></li>
+                </ul>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/timothys.tours.georgia/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/tiresias.monk/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Instagram</a>
+                </div>
+                <p class="mt-8 text-xs text-left md:text-right">Built by <a href="https://dig.ge" class="no-underline text-gray-500 hover:text-accent transition-colors">DIG</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/carousel.js?v=1"></script>
+    <script src="../js/nav.js?v=1"></script>
+</body>
+</html>

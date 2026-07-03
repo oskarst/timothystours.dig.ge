@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racha | Timothy's Tours</title>
+    <meta name="description" content="Explore Racha, a beautiful region in Georgia.">
+    <link rel="stylesheet" href="../uno.css?v=2">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": "Racha",
+    "description": "Racha is surrounded by an impenetrable fortress of limestone ridges and snow-capped peaks. It's slower-paced than the rest of Georgia, but don't mistake that for softness. The mountains here are massive, the forests are deep and full of bears, and the trails are steep and challenging. It's a region of heavy snowfall, dense woods, and powerful, cold rivers.",
+    "url": "https://timothystours.dig.ge/regions/racha.html"
+}
+    </script>
+</head>
+<body class="bg-bgPrimary text-textLight font-sans m-0 p-0 leading-relaxed pt-16 flex flex-col min-h-screen overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-bgPrimary border-b-2 border-primary fixed w-full top-0 z-50 shadow-md">
+        <div class="text-xl font-serif text-accent uppercase tracking-widest font-bold z-50">
+            <a href="../index.html" class="no-underline text-accent hover:text-yellow-500">Timothy's Tours</a>
+        </div>
+        
+        <!-- Pancake Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-accent focus:outline-none z-50">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Nav Links -->
+        <ul id="nav-links" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-bgPrimary md:bg-transparent border-b-2 md:border-none border-primary gap-8 list-none m-0 p-6 md:p-0 items-center z-40 transition-all duration-300">
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../index.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Home</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../about.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">About Me</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../trip-planning.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Trip Planning</a></li>
+            <li class="relative group w-full md:w-auto text-center md:text-left">
+                <a href="index.html" id="mobile-regions-btn" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300 md:py-2">Regions &#9662;</a>
+                <ul id="mobile-regions-dropdown" class="hidden md:group-hover:block relative md:absolute left-0 mt-2 bg-bgPrimary md:border-2 md:border-primary w-full md:w-48 shadow-none md:shadow-lg list-none p-0 m-0 z-50">
+                    <li><a href="samegrelo.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">samegrelo</a></li>
+                    <li><a href="guria.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">guria</a></li>
+                    <li><a href="adjara.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">adjara</a></li>
+                    <li><a href="lechkhumi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">lechkhumi</a></li>
+                    <li><a href="racha.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">racha</a></li>
+                    <li><a href="imereti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">imereti</a></li>
+                    <li><a href="meskheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">meskheti</a></li>
+                    <li><a href="javakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">javakheti</a></li>
+                    <li><a href="kartli.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kartli</a></li>
+                    <li><a href="svaneti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">svaneti</a></li>
+                    <li><a href="mtianeti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">mtianeti</a></li>
+                    <li><a href="kakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kakheti</a></li>
+                    <li><a href="tbilisi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">tbilisi</a></li>
+                </ul>
+            </li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="../contact.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <header class="relative flex flex-col justify-center items-center text-center p-8 " style="height: 60vh; width: 100%;">
+            <div class="absolute top-0 left-0 w-full h-full z-0">
+                <img src="../img/regions/racha-racha-alpine-trek-scaled.webp" alt="Racha Landscape" class="w-full h-full object-cover" />
+            </div>
+            <div class="absolute top-0 left-0 w-full h-full z-10 bg-gray-900 opacity-40"></div>
+            
+            <div class="relative z-20 w-full max-w-4xl mx-auto">
+                <h1 class="font-serif text-4xl md:text-5xl text-accent uppercase tracking-widest mb-6">Racha</h1>
+            </div>
+        
+        </header>
+
+        <!-- Content Section -->
+        
+        
+
+        
+        
+
+        <section class="pt-20 px-8 max-w-4xl mx-auto bg-bgPrimary brush-edge-top relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Wild Rioni Rapids</h2>
+            <p class="mb-6">Racha shares the spectacular Rioni river valley with its twin region, Lechkhumi, offering a deeply authentic alternative to crowded tourist hotspots. There are no sanitized package tours here. Instead, the river flows wild and swift near its birthplace in the high mountains, setting the unhurried rhythm of village life.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Nikortsminda Carvings</h2>
+            <p class="mb-6">While others rush from one famous landmark to the next, we take the time to explore the quiet grandeur of Racha's historical sites. Standing before the intricate stone carvings of Nikortsminda and the isolated beauty of Mravaldzali brings you face to face with the Great Caucasus. These are places of deep, grounded history appreciated best far from the busy highways.</p>
+        </section>
+
+        <!-- Carousel Section -->
+        <div class="w-full bg-bgPrimary py-8 border-b-2 border-gray-800 relative z-20">
+            <div class="max-w-6xl mx-auto px-4 relative group">
+                <button class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10094;</button>
+                
+                <div class="carousel-container flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide py-4 px-2">
+                <img src="../img/regions/racha-gallery-racha-udziro-trek-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-tamars-cliffs-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-shaori-reservoir-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-satsalike-cliff-scaled.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-rioni-canyon-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-pigeon-bus-stop-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-oni-synagogue-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-nikortsminda-village-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-mountain-summer-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-khotevi-mountains-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+                <img src="../img/regions/racha-gallery-racha-katistsveri-peak-1024x768.webp" alt="Racha Gallery Image" class="w-80 h-64 object-cover shrink-0 snap-center border-2 border-primary" loading="lazy" />
+
+                </div>
+                
+                <button class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-gray-900 border-2 border-primary text-accent w-12 h-12 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-primary hover:text-white cursor-pointer hidden md:flex">&#10095;</button>
+            </div>
+        </div>
+
+        <section class="pb-20 pt-8 px-8 max-w-4xl mx-auto bg-bgPrimary relative z-20 text-lg text-gray-300">
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider">Udziro Alpine Camp</h2>
+            <p class="mb-6">The high mountains of Upper Racha are an absolute paradise for those willing to put in the physical effort. The trail passes through exquisite pine forests and forgotten wilderness before reaching camp by the pristine, isolated waters of Udziro Lake. This environment demands respect and repays the effort with unfiltered panoramas of the peaks.</p>
+            <h2 class="text-3xl text-accent font-serif mb-6 uppercase tracking-wider mt-8">Karstic Grottos & Waterfalls</h2>
+            <p class="mb-6">I have spent some of my happiest days wandering these valleys, learning the hidden secrets of the karstic caves and towering waterfalls. My job is to handle the logistics so you can simply focus on the dirt under your feet and the incredible scale of the mountains above. Jump in the off-road car, and we will find the cozy, untamed adventures waiting in Racha.</p>
+        </section>
+        
+        <!-- CTA -->
+        <div class="text-center pb-20">
+             <a href="../contact.html" class="inline-block bg-primary text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-primary hover:bg-transparent hover:text-accent transition-all duration-300">Explore Racha With Me</a>
+        </div>
+    </main>
+    
+    <footer class="bg-gray-900 py-12 border-t-4 border-primary mt-auto z-20 relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Brand -->
+            <div>
+                <h3 class="font-serif text-2xl text-accent uppercase tracking-widest mb-4">Timothy's Tours</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">Expert guidance through the rivers, dirt roads, and unpolished beauty of Georgia. No tourist traps, just the real deal.</p>
+                <p class="text-gray-500 text-sm">&copy; 2026 Timothy's Tours. All rights reserved.</p>
+            </div>
+            
+            <!-- Links -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="list-none p-0 flex flex-col gap-3">
+                    <li><a href="../index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="../about.html" class="no-underline text-gray-400 hover:text-accent transition-colors">About Me</a></li>
+                    <li><a href="../trip-planning.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Trip Planning</a></li>
+                    <li><a href="index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Regions</a></li>
+                    <li><a href="../contact.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Contact</h4>
+                <ul class="list-none p-0 flex flex-col gap-3 mb-8">
+                    <li><a href="mailto:timothy@timothystours.ge" class="no-underline text-gray-400 hover:text-accent transition-colors">timothy@timothystours.ge</a></li>
+                    <li><a href="tel:+995598411778" class="no-underline text-gray-400 hover:text-accent transition-colors">+995 598 411 778</a></li>
+                </ul>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/timothys.tours.georgia/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/tiresias.monk/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Instagram</a>
+                </div>
+                <p class="mt-8 text-xs text-left md:text-right">Built by <a href="https://dig.ge" class="no-underline text-gray-500 hover:text-accent transition-colors">DIG</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/carousel.js?v=1"></script>
+    <script src="../js/nav.js?v=1"></script>
+</body>
+</html>

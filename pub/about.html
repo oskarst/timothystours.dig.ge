@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Timothy | Timothy's Tours</title>
     <meta name="description" content="Learn about Timothy Merkel, your local guide to the rugged back roads and hidden secrets of the Republic of Georgia.">
-    <link rel="stylesheet" href="uno.css">
+    <link rel="stylesheet" href="uno.css?v=2">
 </head>
 <body class="bg-bgPrimary text-textLight font-sans m-0 p-0 leading-relaxed pt-16 overflow-x-hidden">
 
     <!-- Top Navigation -->
-    <nav class="flex justify-between items-center px-6 py-4 bg-bgPrimary border-b-2 border-primary fixed w-full top-0 z-50 shadow-md">
-        <div class="text-xl font-serif text-accent uppercase tracking-widest font-bold"><a href="index.html" class="no-underline text-accent hover:text-yellow-500">Timothy's Tours</a></div>
-        <div class="flex gap-6 hidden md:flex">
-            <a href="index.html" class="no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Home</a>
-            <a href="about.html" class="no-underline text-accent hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">About Me</a>
-            <a href="trip-planning.html" class="no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Trip Planning</a>
-            <a href="contact.html" class="no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Contact</a>
+    <nav class="flex flex-wrap justify-between items-center px-6 py-4 bg-bgPrimary border-b-2 border-primary fixed w-full top-0 z-50 shadow-md">
+        <div class="text-xl font-serif text-accent uppercase tracking-widest font-bold z-50">
+            <a href="index.html" class="no-underline text-accent hover:text-yellow-500">Timothy's Tours</a>
         </div>
+        
+        <!-- Pancake Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-accent focus:outline-none z-50">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Nav Links -->
+        <ul id="nav-links" class="hidden md:flex flex-col md:flex-row absolute md:relative top-full left-0 w-full md:w-auto bg-bgPrimary md:bg-transparent border-b-2 md:border-none border-primary gap-8 list-none m-0 p-6 md:p-0 items-center z-40 transition-all duration-300">
+            <li class="w-full md:w-auto text-center md:text-left"><a href="index.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Home</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="about.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">About Me</a></li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="trip-planning.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Trip Planning</a></li>
+            <li class="relative group w-full md:w-auto text-center md:text-left">
+                <a href="regions/index.html" id="mobile-regions-btn" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300 md:py-2">Regions &#9662;</a>
+                <ul id="mobile-regions-dropdown" class="hidden md:group-hover:block relative md:absolute left-0 mt-2 bg-bgPrimary md:border-2 md:border-primary w-full md:w-48 shadow-none md:shadow-lg list-none p-0 m-0 z-50">
+                    <li><a href="regions/samegrelo.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">samegrelo</a></li>
+                    <li><a href="regions/guria.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">guria</a></li>
+                    <li><a href="regions/adjara.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">adjara</a></li>
+                    <li><a href="regions/lechkhumi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">lechkhumi</a></li>
+                    <li><a href="regions/racha.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">racha</a></li>
+                    <li><a href="regions/imereti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">imereti</a></li>
+                    <li><a href="regions/meskheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">meskheti</a></li>
+                    <li><a href="regions/javakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">javakheti</a></li>
+                    <li><a href="regions/kartli.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kartli</a></li>
+                    <li><a href="regions/svaneti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">svaneti</a></li>
+                    <li><a href="regions/mtianeti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">mtianeti</a></li>
+                    <li><a href="regions/kakheti.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">kakheti</a></li>
+                    <li><a href="regions/tbilisi.html" class="block px-4 py-3 text-textLight hover:text-accent hover:bg-gray-800 transition-colors capitalize">tbilisi</a></li>
+                </ul>
+            </li>
+            <li class="w-full md:w-auto text-center md:text-left"><a href="contact.html" class="block no-underline text-textLight hover:text-accent uppercase tracking-widest font-bold text-sm transition-colors duration-300">Contact</a></li>
+        </ul>
     </nav>
     <main>
 
@@ -26,13 +55,13 @@
     <header class="relative flex flex-col justify-center items-center text-center p-8 border-b-4 border-primary" style="height: 700px; width: 100%; overflow: hidden;">
         <!-- Slideshow Backgrounds -->
         <div class="absolute top-0 left-0 w-full h-full z-0 overflow-hidden">
-            <div class="hero-slide active" style="background-image: url('img/about/tim-birtvisi-1024x682.webp');"></div>
-            <div class="hero-slide" style="background-image: url('img/about/tim-javakheti-1024x682.webp');"></div>
-            <div class="hero-slide" style="background-image: url('img/about/tim-kartli-1024x682.webp');"></div>
-            <div class="hero-slide" style="background-image: url('img/about/tim-udabno-1024x682.webp');"></div>
+            <div class="hero-slide active" style="background-image: url('img/about/tim-birtvisi-1024x682.webp'); background-position: center 25%;"></div>
+            <div class="hero-slide" style="background-image: url('img/about/tim-javakheti-1024x682.webp'); background-position: center 25%;"></div>
+            <div class="hero-slide" style="background-image: url('img/about/tim-kartli-1024x682.webp'); background-position: center 25%;"></div>
+            <div class="hero-slide" style="background-image: url('img/about/tim-udabno-1024x682.webp'); background-position: center 25%;"></div>
         </div>
         <!-- Dark Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full z-10" style="background: linear-gradient(rgba(40, 43, 40, 0.8), rgba(40, 43, 40, 0.8));"></div>
+        <div class="absolute top-0 left-0 w-full h-full z-10" style="background: linear-gradient(rgba(40, 43, 40, 0.5), rgba(40, 43, 40, 0.5));"></div>
         
         <!-- Hero Content -->
         <div class="relative z-20 w-full flex flex-col items-center">
@@ -54,7 +83,7 @@
             <p class="mb-6 text-lg">Eventually, I realized that I feel happiest and most fulfilled when I am sharing these raw, unfiltered experiences with people like you. That is why I started Timothy's Tours.</p>
         </div>
 
-        <div class="mb-16 bg-primary bg-opacity-10 border-l-4 border-primary p-8">
+        <div class="mb-16 bg-primary border-l-4 border-primary p-8">
             <h2 class="font-serif text-2xl text-accent uppercase tracking-widest mb-6">My Guiding Philosophy</h2>
             <p class="mb-6 text-lg">I am not a typical tour guide, and my job is not to pamper you. I don't find this work interesting if I have to drive to the same crowded tourist traps and repeat the same generic script every day.</p>
             <p class="mb-6 text-lg">I am here to handle the chaos so you can safely experience a Georgia that most people never see. Whether we are exploring the desolate steppes of Kakheti or sitting around a village table piled high with feasts, I want you to feel like a true adventurer.</p>
@@ -68,16 +97,48 @@
         <div class="max-w-3xl mx-auto">
             <h2 class="font-serif text-3xl uppercase tracking-widest mb-4">Let's Hit the Dirt Roads Together</h2>
             <p class="text-xl mb-8 text-gray-200">Ready to start planning your adventure?</p>
-            <a href="trip-planning.html" class="inline-block bg-transparent text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-textLight hover:bg-textLight hover:text-primary transition-all duration-300 mr-4">Trip Planning</a>
-            <a href="contact.html" class="inline-block bg-transparent text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-textLight hover:bg-textLight hover:text-primary transition-all duration-300">Contact Me</a>
+            <a href="trip-planning.html" class="inline-block bg-transparent text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-textLight hover:bg-textLight hover:text-accent transition-all duration-300 mr-4">Trip Planning</a>
+            <a href="contact.html" class="inline-block bg-transparent text-textLight px-6 py-3 font-bold uppercase tracking-widest border-2 border-textLight hover:bg-textLight hover:text-accent transition-all duration-300">Contact Me</a>
         </div>
     </div>
 
         </main>
 
-    <footer class="text-center p-8 mt-0 text-sm text-gray-400 bg-bgPrimary">
-        <p>&copy; 2026 Timothy's Tours: Adventures in Georgia</p>
-        <p class="mt-2 text-xs">Built by <a href="https://dig.ge" class="text-gray-400 hover:text-accent">DIG</a></p>
+    <footer class="bg-gray-900 py-12 border-t-4 border-primary mt-auto z-20 relative">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Brand -->
+            <div>
+                <h3 class="font-serif text-2xl text-accent uppercase tracking-widest mb-4">Timothy's Tours</h3>
+                <p class="text-gray-400 mb-6 leading-relaxed">Expert guidance through the rivers, dirt roads, and unpolished beauty of Georgia. No tourist traps, just the real deal.</p>
+                <p class="text-gray-500 text-sm">&copy; 2026 Timothy's Tours. All rights reserved.</p>
+            </div>
+            
+            <!-- Links -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Explore</h4>
+                <ul class="list-none p-0 flex flex-col gap-3">
+                    <li><a href="index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="about.html" class="no-underline text-gray-400 hover:text-accent transition-colors">About Me</a></li>
+                    <li><a href="trip-planning.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Trip Planning</a></li>
+                    <li><a href="regions/index.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Regions</a></li>
+                    <li><a href="contact.html" class="no-underline text-gray-400 hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact -->
+            <div>
+                <h4 class="font-serif text-lg text-white uppercase tracking-widest mb-4">Contact</h4>
+                <ul class="list-none p-0 flex flex-col gap-3 mb-8">
+                    <li><a href="mailto:timothy@timothystours.ge" class="no-underline text-gray-400 hover:text-accent transition-colors">timothy@timothystours.ge</a></li>
+                    <li><a href="tel:+995598411778" class="no-underline text-gray-400 hover:text-accent transition-colors">+995 598 411 778</a></li>
+                </ul>
+                <div class="flex gap-6">
+                    <a href="https://www.facebook.com/timothys.tours.georgia/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Facebook</a>
+                    <a href="https://www.instagram.com/tiresias.monk/" target="_blank" rel="noopener noreferrer" class="no-underline text-gray-400 hover:text-accent text-sm uppercase tracking-widest font-bold transition-colors">Instagram</a>
+                </div>
+                <p class="mt-8 text-xs text-left md:text-right">Built by <a href="https://dig.ge" class="no-underline text-gray-500 hover:text-accent transition-colors">DIG</a></p>
+            </div>
+        </div>
     </footer>
 
 
@@ -94,5 +155,6 @@
             }
         });
     </script>
+    <script src="js/nav.js?v=1"></script>
 </body>
 </html>
